@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>To-List</title>
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+        <div class="chain title">
+            <h1>To-Do List</h1>
+        </div>
+
+        <div class="chain header">
+            <input autocomplete="off" type="text" placeholder="Enter Task Here" id="task">
+            <input id="hours" type="number" min="1" max="12" placeholder="HH" style="width: 45px; text-align: center;" id="mm">
+            <input id="minutes" type="number" min="0" max="60" placeholder="MM" style="width: 45px; text-align: center;" id="hh">
+            <span id="pa">AM</span>
+            <button id="btnAdd">Add</button>
+        </div>
+
+        <div class="chain left" id="left">
+            <h3>Pending</h3>
+            <!-- <div class="holder">
+                <div class="check-box square"><i class="far fa-square"></i></div>
+            <div class="fixed">Practice programming overnight</div>
+            <div class="time">12:30pm</div>
+            <div class="close"><i class="far fa-times-circle"></i></div>
+            </div> -->
+            <ul class="holder">
+                <!-- <li id="li">
+                    <div class="check-box"><i class="far fa-square"></i></div>
+                    <div class="fixed">Practice Makes a man perfect</div>
+                    <div class="time">12:30pm</div><i class="far fa-times-circle"></i>
+                </li> -->
+            </ul>
+            <button id="reset" class="btn reset">Reset</button>
+        </div>
+
+        <div class="chain right">
+            <h3>Completed</h3>
+            <ul class="holder rightHolder">
+                <!-- <li id="li">
+                    <div class="check-box"><i class="far fa-square"></i></div>
+                    <div class="fixed">Practice Makes a man perfect</div>
+                    <div class="time">12:30pm</div><i class="far fa-times-circle"></i>
+                </li> -->
+            </ul>
+            <button id="clear" class="btn clear">Clear</button>
+        </div>
+        <div class="chain footer">
+            <p>www.example.com</p>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
